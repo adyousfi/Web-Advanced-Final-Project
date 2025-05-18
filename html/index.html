@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arsenal Team</title>
+  <link rel="stylesheet" href="/Web-Advanced-Final-Project/css/style.css" />
+  <link rel="icon" href="/Web-Advanced-Final-Project/images/Arsenal-Logo.png" type="image/png" />
+</head>
+<body>
+  <header>
+    <img src="/Web-Advanced-Final-Project/images/Arsenal-Logo.png" alt="Arsenal Logo">
+    <h1>Search Arsenal Players</h1>
+    
+    <input type="text" id="searchInput" placeholder="Zoek een speler..." />
+
+    <!-- Filters -->
+    <div class="filters">
+      <label for="positionFilter">Filter op positie:</label>
+      <select id="positionFilter">
+        <option value="">Alle</option>
+      </select>
+
+      <label for="countryFilter">Filter op land:</label>
+      <select id="countryFilter">
+        <option value="">Alle</option>
+      </select>
+    </div>
+
+    <!-- Formulier voor nieuwe speler -->
+    <form id="addPlayerForm">
+      <h3>Nieuwe speler toevoegen</h3>
+
+      <input type="text" id="playerName" placeholder="Spelersnaam" required />
+
+      <select id="playerPosition" required>
+        <option value="">Kies positie</option>
+        <option value="Goalkeeper">Goalkeeper</option>
+        <option value="Defender">Defender</option>
+        <option value="Midfielder">Midfielder</option>
+        <option value="Forward">Forward</option>
+      </select>
+
+      <input type="text" id="playerNationality" placeholder="Nationaliteit" required />
+
+      <input type="file" id="playerPhotoFile" accept="image/*" />
+
+      <button type="submit">Voeg toe</button>
+
+      <p id="formError" style="color:red; display:none;"></p>
+    </form>
+
+  </header>
+
+  <main>
+    <section>
+      <h2>Players</h2>
+      <div id="playersList" class="grid"></div>
+    </section>
+
+    <section>
+      <h2>Favorites</h2>
+      <div id="favoritesList" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Arsenal Player Finder. Made by Adam.</p>
+  </footer>
+
+  <script src="/Web-Advanced-Final-Project/js/script.js"></script>
+</body>
+</html>

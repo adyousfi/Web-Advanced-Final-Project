@@ -44,3 +44,119 @@ input, select {
   box-sizing: border-box;
 }
 
+.filters {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters label {
+  margin-right: 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.filters select {
+  max-width: 150px;
+}
+
+/* Main container */
+main {
+  padding: 2em 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  border-left: 6px solid #db0007;
+  padding-left: 10px;
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+  color: #db0007;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.2em;
+}
+
+/* Spelerkaartjes */
+.player-card {
+  background: white;
+  border: 2px solid #db0007;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1em 0.8em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(219,0,7,0.4);
+}
+
+.player-card img {
+  width: 90px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 0.7em;
+  background-color: #f7f7f7;
+  box-shadow: inset 0 0 6px #ddd;
+}
+
+.player-card h3 {
+  margin: 0 0 0.3em;
+  font-size: 1.05em;
+  color: #db0007;
+  font-weight: 700;
+}
+
+.player-card p {
+  margin: 0.2em 0;
+  font-size: 0.85em;
+  color: #444;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/* Favorieten knop */
+.player-card button.fav-btn {
+  margin-top: auto;
+  background-color: #db0007;
+  color: white;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.player-card button.fav-btn:hover {
+  background-color: #a40005;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+

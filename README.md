@@ -131,11 +131,12 @@ Hieronder een overzicht van alle toegepaste JavaScript-concepten zoals vereist i
 ![Filter](public/image-3.png)
 
 ##  Gebruikte bronnen
-- 
 - [Vite](https://vitejs.dev/)
 - [TheSportsDB API](https://www.thesportsdb.com/api.php)
 - OpenAI – voor hulp en ondersteuning tijdens de ontwikkeling.
 - ChatGPT chatlog voor Vite installatie en controle README: https://chatgpt.com/share/682f718f-5f3c-8010-a11f-e18a518e63dc 
+
+- Ik wil ook mijn dank uitspreken aan mijn docent, Ward De Boeck. Zijn begeleiding en uitleg tijdens de lessen waren essentieel voor het succesvol afronden van dit project.
 
 
 

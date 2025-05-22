@@ -1,0 +1,25 @@
+{
+  "name": "web-advanced-final-project",
+  "version": "1.0.0",
+  "description": "Deze webapplicatie toont een overzicht van Arsenal-spelers met de mogelijkheid om te zoeken, filteren, favorieten te beheren en nieuwe spelers toe te voegen. De applicatie haalt standaard spelersdata op via de publieke [TheSportsDB API](https://www.thesportsdb.com/api.php) en slaat gegevens lokaal op in `localStorage` zodat gebruikers hun favorieten en toegevoegde spelers behouden tussen sessies.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adyousfi/Web-Advanced-Final-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adyousfi/Web-Advanced-Final-Project/issues"
+  },
+  "homepage": "https://github.com/adyousfi/Web-Advanced-Final-Project#readme",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
